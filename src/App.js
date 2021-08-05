@@ -5,28 +5,32 @@ import classes from './App.module.css';
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <div className={classes.container}>
-            <div className={classes['top-arrow']}>
-              <Link to="/top">
-                <div className={classes.top}></div>
-              </Link>
+      <div className={classes.container}>
+        <div className={classes['top-arrow']}>
+          <Link to="/top" className={classes.link}>
+            <div className={classes.top}>
+              <p>Is it a triangle?(sum of angles)</p>
             </div>
+          </Link>
+        </div>
 
-            <div className={classes['bottom-arrows']}>
-              <Link to="/left">
-                <div className={classes.left}></div>
-              </Link>
-              <Link to="/center">
-                <div className={classes.center}></div>
-              </Link>
-              <Link to="/right">
-                <div className={classes.right}></div>
-              </Link>
+        <div className={classes['bottom-arrows']}>
+          <Link to="/left" className={classes.link}>
+            <div className={classes.left}>
+              <p>Find area of triangles.</p>
             </div>
-          </div>
-        </nav>
+          </Link>
+          <Link to="/center" className={classes.link}>
+            <div className={classes.center}>
+              <p>Find hypotenuse.</p>
+            </div>
+          </Link>
+          <Link to="/right" className={classes.link}>
+            <div className={classes.right}>
+              <p>Find the third angle.</p>
+            </div>
+          </Link>
+        </div>
 
         {/* <Link to="/">Home</Link> */}
         {/* <Switch>
