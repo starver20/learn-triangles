@@ -59,6 +59,7 @@ body {
 .top p,
 .right p,
 .left p {
+  font-size: 1.2vw;
   text-align: center;
   position: relative;
   top: 8vw;
@@ -68,6 +69,7 @@ body {
 }
 
 .center p {
+  font-size: 1.2vw;
   text-align: center;
   position: relative;
   bottom: 9vw;

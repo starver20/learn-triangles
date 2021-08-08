@@ -21,7 +21,7 @@ button {
 }
 
 .triangle {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
   width: 0;
   height: 0;
   border-bottom: 15vw solid var(--secondary-color);
@@ -40,27 +40,27 @@ button {
 
 .hypo {
   position: relative;
-  top: 3.5vw;
-  left: 10vw;
+  top: 1.5vw;
+  left: 11vw;
 }
 
 .base {
   text-align: center;
   width: 4.5vw;
   position: relative;
-  top: 9vw;
+  top: 5vw;
   left: 5vw;
   overflow-x: hidden;
 }
 
 p {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 input {
   width: 15vw;
-  padding: 0.5rem;
-  font-size: 0.8vw;
+  padding: 0.7rem;
+  font-size: 1vw;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -79,4 +79,39 @@ button {
 button:hover {
   background-color: var(--secondary-color);
   color: white;
+}
+
+@media (max-width: 1000px) {
+  .triangle {
+    border-bottom: 30vw solid var(--secondary-color);
+    border-right: 30vw solid transparent;
+  }
+  .height {
+    top: 14vw;
+  }
+
+  .hypo {
+    top: 6vw;
+    left: 20vw;
+  }
+
+  .base {
+    top: 13vw;
+    left: 11vw;
+  }
+
+  p {
+    font-size: 2.5vw;
+  }
+
+  input {
+    width: 30vw;
+    height: 1.2rem;
+    font-size: 1rem;
+  }
+
+  button {
+    width: 15vw;
+    font-size: 2vw;
+  }
 }

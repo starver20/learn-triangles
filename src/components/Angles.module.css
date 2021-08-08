@@ -13,3 +13,55 @@ body {
   margin: 0;
   background-color: var(--primary-color);
 }
+
+.container {
+  margin-top: 2vh;
+  padding: 1rem;
+  text-align: center;
+}
+
+.triangle,
+input,
+button {
+  display: block;
+  margin: 1rem auto;
+}
+
+.triangle {
+  margin-bottom: 5rem;
+  width: 0;
+  height: 0;
+  border-bottom: 12vw solid var(--secondary-color);
+  border-right: 12vw solid transparent;
+  border-left: 12vw solid transparent;
+  text-align: left;
+}
+
+.angle-a,
+.angle-b,
+.angle-c {
+  position: relative;
+  width: 4vw;
+  min-width: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.angle-a {
+  left: -2.2vw;
+  top: -3.8vw;
+}
+
+.angle-b {
+  top: 6vw;
+  left: -14vw;
+}
+
+.angle-c {
+  top: 1vw;
+  left: 10vw;
+}
+
+.triangle p {
+  font-size: 1.5vw;
+}

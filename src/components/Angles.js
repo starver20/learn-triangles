@@ -1,15 +1,89 @@
-import React from 'react';
+import React, { useState } from 'react';
+import classes from './Angles.module.css';
 
 export const Angles = (props) => {
-  console.log(props.showHome);
+  const [angleA, setAngleA] = useState(0);
+  const [angleB, setAngleB] = useState(0);
+  const [angleC, setAngleC] = useState(0);
+  const [msg, setMsg] = useState('');
+
   const onBackClicked = () => {
     props.toggleAngles();
     props.toggleHome();
   };
+
+  const onSubmitClicked = (e) => {
+    e.preventDefault();
+  };
+
+  const onChangeAngleA = (e) => {
+    if (e.target.value === '') {
+      setAngleA(0);
+      return;
+    }
+    setAngleA(e.target.value);
+  };
+  const onChangeAngleB = (e) => {
+    if (e.target.value === '') {
+      setAngleB(0);
+      return;
+    }
+    setAngleB(e.target.value);
+  };
+  const onChangeAngleC = (e) => {
+    if (e.target.value === '') {
+      setAngleC(0);
+      return;
+    }
+    setAngleC(e.target.value);
+  };
+
   return (
     <div>
-      <div>Hey there this is the Angles page!</div>
       <div onClick={onBackClicked}>Back</div>
+      <div className={classes.container}>
+        <div className={classes.triangle}>
+          <div className={classes['angle-a']}>
+            <p>{angleA}</p>
+          </div>
+          <div className={classes['angle-b']}>
+            <p>{angleB}</p>
+          </div>
+          <div className={classes['angle-c']}>
+            <p>{angleC}</p>
+          </div>
+        </div>
+        <div className={classes.form}>
+          <form action="" onSubmit={onSubmitClicked}>
+            <input
+              type="number"
+              id="angle_a"
+              placeholder="Angle A"
+              max="9999"
+              min="0"
+              onChange={onChangeAngleA}
+            />
+            <input
+              type="number"
+              id="angle_b"
+              placeholder="Angle B"
+              max="9999"
+              min="0"
+              onChange={onChangeAngleB}
+            />
+            <input
+              type="number"
+              id="angle_c"
+              placeholder="Angle C"
+              max="9999"
+              min="0"
+              onChange={onChangeAngleC}
+            />
+            <p>{msg}</p>
+            <button>Check</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

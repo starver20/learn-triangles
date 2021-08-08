@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import classes from './Hypotenuse.module.css';
+import Back from './UI/Back';
 
 export const Hypotenuse = (props) => {
   const [height, setHeight] = useState(0);
@@ -43,7 +44,7 @@ export const Hypotenuse = (props) => {
   };
   return (
     <div>
-      <div onClick={onBackClicked}>Back</div>
+      <Back onBackClicked={onBackClicked}>Back</Back>
       <div className={classes.container}>
         <div className={classes.triangle}>
           <div className={classes.height}>
