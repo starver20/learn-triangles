@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #edc7b7;
+  --secondary-color: #ac3b61;
+}
+
+.container {
+  margin-top: 15vh;
+  padding: 1rem;
+  text-align: center;
+}
+
+.triangle,
+input,
+button {
+  display: block;
+  margin: 1rem auto;
+}
+
+.form p {
+  color: red;
+}
+
+.triangle {
+  margin-bottom: 4rem;
+  width: 0;
+  height: 0;
+  border-bottom: 15vw solid var(--secondary-color);
+  border-right: 15vw solid transparent;
+  text-align: left;
+}
+.height {
+  text-align: center;
+  width: 4.5vw;
+  min-width: 20px;
+  position: relative;
+  left: -5vw;
+  top: 6.5vw;
+  overflow-x: hidden;
+}
+
+.hypo {
+  position: relative;
+  top: 3.5vw;
+  left: 10vw;
+}
+
+.base {
+  text-align: center;
+  width: 4.5vw;
+  position: relative;
+  top: 9vw;
+  left: 5vw;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1vw;
+}
+
+input {
+  width: 15vw;
+  padding: 0.5rem;
+  font-size: 0.8vw;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+button {
+  /* background-color: transparent; */
+  width: 5vw;
+  border: none;
+  font-size: 1vw;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
