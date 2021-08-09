@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classes from './Hypotenuse.module.css';
 import Back from './UI/Back';
+import Button from './UI/Button';
 
 export const Hypotenuse = (props) => {
   const [height, setHeight] = useState(0);
@@ -50,7 +51,10 @@ export const Hypotenuse = (props) => {
           <div className={classes.height}>
             <p>{height}</p>
           </div>
-          <div className={classes.hypo}>
+          <div
+            className={classes.hypo}
+            style={{ color: 'green', fontWeight: 500 }}
+          >
             <p>{hypo}</p>
           </div>
           <div className={classes.base}>
@@ -59,10 +63,22 @@ export const Hypotenuse = (props) => {
         </div>
         <div className={classes.form}>
           <form action="" onSubmit={onSubmitClicked}>
-            <input type="number" id="height" onChange={onChangeHeight} />
-            <input type="number" id="base" onChange={onChangeBase} />
+            <input
+              type="number"
+              id="height"
+              min="1"
+              onChange={onChangeHeight}
+              placeholder="Height"
+            />
+            <input
+              type="number"
+              id="base"
+              min="1"
+              onChange={onChangeBase}
+              placeholder="Base"
+            />
+            <Button>Check</Button>
             <p>{msg}</p>
-            <button>Check</button>
           </form>
         </div>
       </div>

@@ -10,8 +10,7 @@
 }
 
 .triangle,
-input,
-button {
+input {
   display: block;
   margin: 1rem auto;
 }
@@ -40,8 +39,8 @@ button {
 
 .hypo {
   position: relative;
-  top: 1.5vw;
-  left: 11vw;
+  top: 1.2vw;
+  left: 10vw;
 }
 
 .base {
@@ -64,21 +63,6 @@ input {
   border: none;
   outline: none;
   border-radius: 5px;
-}
-
-button {
-  /* background-color: transparent; */
-  width: 5vw;
-  border: none;
-  font-size: 1vw;
-  padding: 0.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--secondary-color);
-  color: white;
 }
 
 @media (max-width: 1000px) {
@@ -108,10 +92,5 @@ button:hover {
     width: 30vw;
     height: 1.2rem;
     font-size: 1rem;
-  }
-
-  button {
-    width: 15vw;
-    font-size: 2vw;
   }
 }

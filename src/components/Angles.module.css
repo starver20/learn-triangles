@@ -15,14 +15,13 @@ body {
 }
 
 .container {
-  margin-top: 2vh;
+  margin-top: 15vh;
   padding: 1rem;
   text-align: center;
 }
 
 .triangle,
-input,
-button {
+input {
   display: block;
   margin: 1rem auto;
 }
@@ -48,7 +47,7 @@ button {
 }
 
 .angle-a {
-  left: -2.2vw;
+  left: -2vw;
   top: -3.8vw;
 }
 
@@ -64,4 +63,35 @@ button {
 
 .triangle p {
   font-size: 1.5vw;
+}
+
+@media (max-width: 1000px) {
+  .triangle {
+    border-bottom: 30vw solid var(--secondary-color);
+    border-right: 30vw solid transparent;
+    border-left: 30vw solid transparent;
+  }
+  .angle-a {
+    top: -6vw;
+  }
+
+  .angle-b {
+    top: 20vw;
+    left: -32vw;
+  }
+
+  .angle-c {
+    top: 12vw;
+    left: 28vw;
+  }
+
+  .triangle p {
+    font-size: 2.5vw;
+  }
+
+  input {
+    width: 30vw;
+    height: 1.2rem;
+    font-size: 1rem;
+  }
 }

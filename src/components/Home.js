@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import classes from './Home.module.css';
 import { Angles } from './Angles';
 import { Angle } from './Angle';

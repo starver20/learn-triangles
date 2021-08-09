@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import classes from './Angles.module.css';
+import Back from './UI/Back';
+import Button from './UI/Button';
 
 export const Angles = (props) => {
   const [angleA, setAngleA] = useState(0);
   const [angleB, setAngleB] = useState(0);
   const [angleC, setAngleC] = useState(0);
   const [msg, setMsg] = useState('');
+  const [fontColor, setFontColor] = useState({});
 
   const onBackClicked = () => {
     props.toggleAngles();
@@ -14,6 +17,15 @@ export const Angles = (props) => {
 
   const onSubmitClicked = (e) => {
     e.preventDefault();
+    if (Number(angleA) + Number(angleB) + Number(angleC) === 180) {
+      setMsg('Yess! These angles can form a triangle.');
+      setFontColor({ color: 'green' });
+      return;
+    }
+
+    setMsg("Nope! These angles won't form a triangle.");
+    setFontColor({ color: 'red' });
+    console.log(angleA + angleB + angleC);
   };
 
   const onChangeAngleA = (e) => {
@@ -40,17 +52,18 @@ export const Angles = (props) => {
 
   return (
     <div>
-      <div onClick={onBackClicked}>Back</div>
+      <Back onBackClicked={onBackClicked} />
+
       <div className={classes.container}>
         <div className={classes.triangle}>
           <div className={classes['angle-a']}>
-            <p>{angleA}</p>
+            <p style={fontColor}>{angleA}</p>
           </div>
           <div className={classes['angle-b']}>
-            <p>{angleB}</p>
+            <p style={fontColor}>{angleB}</p>
           </div>
           <div className={classes['angle-c']}>
-            <p>{angleC}</p>
+            <p style={fontColor}>{angleC}</p>
           </div>
         </div>
         <div className={classes.form}>
@@ -79,8 +92,8 @@ export const Angles = (props) => {
               min="0"
               onChange={onChangeAngleC}
             />
-            <p>{msg}</p>
-            <button>Check</button>
+            <Button>Check</Button>
+            <p style={fontColor}>{msg}</p>
           </form>
         </div>
       </div>

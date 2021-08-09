@@ -1,0 +1,21 @@
+.chk-btn {
+  display: block;
+  margin: 1rem auto;
+  width: 5vw;
+  border: none;
+  font-size: 1vw;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.chk-btn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .chk-btn {
+    width: 15vw;
+    font-size: 2vw;
+  }
+}
