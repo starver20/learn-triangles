@@ -4,7 +4,7 @@
 }
 
 .container {
-  margin-top: 15vh;
+  margin-top: 5vh;
   padding: 1rem;
   text-align: center;
 }
@@ -20,35 +20,36 @@ input {
 }
 
 .triangle {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   width: 0;
   height: 0;
-  border-bottom: 15vw solid var(--secondary-color);
-  border-right: 15vw solid transparent;
+  border-right: 10vw solid transparent;
+  border-left: 10vw solid transparent;
+  border-bottom: calc(20vw * 0.8660254) solid var(--secondary-color);
   text-align: left;
 }
-.height {
+.side-a {
   text-align: center;
   width: 4.5vw;
   min-width: 20px;
   position: relative;
-  left: -5vw;
-  top: 6.5vw;
+  top: 7vw;
+  left: -10vw;
   overflow-x: hidden;
 }
 
-.hypo {
+.side-b {
   position: relative;
-  top: 1.2vw;
-  left: 10vw;
+  top: 1.9vw;
+  left: 7vw;
 }
 
-.base {
+.side-c {
   text-align: center;
   width: 4.5vw;
   position: relative;
-  top: 5vw;
-  left: 5vw;
+  top: 7vw;
+  left: -2.5vw;
   overflow-x: hidden;
 }
 
@@ -56,7 +57,7 @@ p {
   font-size: 1.5vw;
 }
 
-.form input {
+.side-form input {
   width: 15vw;
   padding: 0.7rem;
   font-size: 1vw;
@@ -67,30 +68,36 @@ p {
 
 @media (max-width: 1000px) {
   .triangle {
-    border-bottom: 30vw solid var(--secondary-color);
-    border-right: 30vw solid transparent;
+    border-right: 20vw solid transparent;
+    border-left: 20vw solid transparent;
+    border-bottom: calc(40vw * 0.8660254) solid var(--secondary-color);
   }
-  .height {
+  .side-a {
     top: 14vw;
+    left: -18vw;
   }
 
-  .hypo {
+  .side-b {
     top: 6vw;
-    left: 20vw;
+    left: 14vw;
   }
 
-  .base {
-    top: 13vw;
-    left: 11vw;
+  .side-c {
+    top: 18vw;
+    left: -2vw;
   }
 
   .triangle p {
     font-size: 2.5vw;
   }
 
-  .form input {
+  .side-form input {
     width: 30vw;
     height: 1.2rem;
     font-size: 1rem;
+  }
+
+  .area {
+    font-size: 4vw;
   }
 }

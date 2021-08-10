@@ -1,12 +1,16 @@
+:root {
+  --secondary-color: #ac3b61;
+}
 .icon {
   position: absolute;
   left: 2vw;
   top: 4vh;
   cursor: pointer;
+  padding: 1rem;
 }
 
 .arrow {
-  background-color: white;
+  background-color: var(--secondary-color);
   width: 1.6rem;
   height: 0.2rem;
   position: absolute;
@@ -20,7 +24,7 @@
   width: 50%;
   height: 0.2rem;
   right: 0.9rem;
-  background-color: #fff;
+  background-color: var(--secondary-color);
 }
 
 .arrow::after {

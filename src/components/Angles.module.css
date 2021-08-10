@@ -21,7 +21,7 @@ body {
 }
 
 .triangle,
-input {
+.angles-inp-form input {
   display: block;
   margin: 1rem auto;
 }
@@ -35,7 +35,14 @@ input {
   border-left: 12vw solid transparent;
   text-align: left;
 }
-
+.angles-inp-form input {
+  width: 15vw;
+  padding: 0.7rem;
+  font-size: 1vw;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
 .angle-a,
 .angle-b,
 .angle-c {
@@ -89,7 +96,11 @@ input {
     font-size: 2.5vw;
   }
 
-  input {
+  .msg {
+    font-size: 4vw;
+  }
+
+  .angles-inp-form input {
     width: 30vw;
     height: 1.2rem;
     font-size: 1rem;

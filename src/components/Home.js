@@ -51,7 +51,7 @@ export const Home = () => {
               }}
             >
               <div className={classes.top}>
-                <p>Is it a triangle?(sum of angles)</p>
+                <p>Is it a triangle?</p>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@ export const Home = () => {
               }}
             >
               <div className={classes.left}>
-                <p>Find area of triangles</p>
+                <p>Find area of triangle.</p>
               </div>
             </div>
             <div
@@ -76,7 +76,7 @@ export const Home = () => {
               }}
             >
               <div className={classes.center}>
-                <p>Find hypotenuse</p>
+                <p>Find hypotenuse.</p>
               </div>
             </div>
             <div
@@ -87,7 +87,7 @@ export const Home = () => {
               }}
             >
               <div className={classes.right}>
-                <p>Find the third angle</p>
+                <p>Find the third angle.</p>
               </div>
             </div>
           </div>

@@ -66,7 +66,7 @@ export const Angles = (props) => {
             <p style={fontColor}>{angleC}</p>
           </div>
         </div>
-        <div className={classes.form}>
+        <div className={classes['angles-inp-form']}>
           <form action="" onSubmit={onSubmitClicked}>
             <input
               type="number"
@@ -93,7 +93,9 @@ export const Angles = (props) => {
               onChange={onChangeAngleC}
             />
             <Button>Check</Button>
-            <p style={fontColor}>{msg}</p>
+            <p className={classes.msg} style={fontColor}>
+              {msg}
+            </p>
           </form>
         </div>
       </div>
