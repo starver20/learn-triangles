@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classes from './Home.module.css';
 import { Angles } from './Angles';
-import { Angle } from './Angle';
+import { Quiz } from './Quiz';
 import { Area } from './Area';
 import { Hypotenuse } from './Hypotenuse';
 
@@ -72,22 +72,22 @@ export const Home = () => {
               className={classes.link}
               onClick={() => {
                 toggleShowHome();
-                toggleShowHypotenuse();
+                toggleShowAngle();
               }}
             >
               <div className={classes.center}>
-                <p>Find hypotenuse.</p>
+                <p>A quiz on triangles.</p>
               </div>
             </div>
             <div
               className={classes.link}
               onClick={() => {
                 toggleShowHome();
-                toggleShowAngle();
+                toggleShowHypotenuse();
               }}
             >
               <div className={classes.right}>
-                <p>Find the third angle.</p>
+                <p>Find hypotenuse.</p>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export const Home = () => {
         <Angles toggleHome={toggleShowHome} toggleAngles={toggleShowAngles} />
       )}
       {!showHome && showAngle && (
-        <Angle toggleHome={toggleShowHome} toggleAngle={toggleShowAngle} />
+        <Quiz toggleHome={toggleShowHome} toggleAngle={toggleShowAngle} />
       )}
       {!showHome && showArea && (
         <Area toggleHome={toggleShowHome} toggleArea={toggleShowArea} />

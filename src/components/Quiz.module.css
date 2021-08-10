@@ -1,0 +1,24 @@
+.quiz-container {
+  width: 35vw;
+  margin: 8vw auto;
+}
+
+.instructions h1 {
+  font-size: 1.5vw;
+  margin: 0 0 0 1rem;
+}
+
+.instructions li {
+  font-size: 1vw;
+  list-style-type: circle;
+}
+
+.options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.options input {
+  cursor: pointer;
+}

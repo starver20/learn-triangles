@@ -1,0 +1,8 @@
+.question {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1vw;
+  margin-top: 2vw;
+  width: 100%;
+  border-radius: 10px;
+}
