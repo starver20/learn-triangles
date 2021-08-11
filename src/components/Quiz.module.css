@@ -4,12 +4,12 @@
 }
 
 .instructions h1 {
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin: 0 0 0 1rem;
 }
 
 .instructions li {
-  font-size: 1vw;
+  font-size: 1.5vw;
   list-style-type: circle;
 }
 
@@ -21,4 +21,23 @@
 
 .options input {
   cursor: pointer;
+}
+
+.quiz-container p {
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 1000px) {
+  .quiz-container {
+    width: 70vw;
+  }
+
+  .instructions h1 {
+    font-size: 2.5vw;
+  }
+
+  .instructions li {
+    font-size: 1.8vw;
+  }
 }

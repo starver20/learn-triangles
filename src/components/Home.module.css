@@ -14,6 +14,17 @@ body {
   background-color: var(--primary-color);
 }
 
+.title {
+  position: fixed;
+  width: 30vw;
+  font-size: 3.5vw;
+}
+
+.title h1 {
+  margin: 0 0 0 1vw;
+  color: var(--secondary-color);
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -91,4 +102,57 @@ body {
   font-weight: 600;
   font-size: 0.9vw;
   color: white;
+}
+
+@media (max-width: 1000px) {
+  .top,
+  .left,
+  .center,
+  .right {
+    border-left: 12vw solid transparent;
+    border-right: 12vw solid transparent;
+    border-bottom: calc(24vw * 0.8660254) solid var(--secondary-color);
+  }
+  .center {
+    border-top: calc(24vw * 0.8660254) solid var(--secondary-color);
+    border-bottom: 0;
+  }
+
+  .top p,
+  .right p,
+  .left p {
+    font-size: 1.65vw;
+    text-align: center;
+    position: relative;
+    top: 11vw;
+    left: -4vw;
+    width: 8vw;
+    margin: 0px;
+  }
+
+  .center p {
+    font-size: 1.65vw;
+    text-align: center;
+    position: relative;
+    bottom: 16vw;
+    left: -4vw;
+    width: 8vw;
+    margin: 0px;
+  }
+  .right p {
+    top: 12.5vw;
+  }
+
+  .title {
+    position: fixed;
+    width: 100vw;
+    top: 10vh;
+    left: 15vw;
+    font-size: 3.5vw;
+  }
+
+  .title h1 {
+    margin: 0 0 0 1vw;
+    color: var(--secondary-color);
+  }
 }

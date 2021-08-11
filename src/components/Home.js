@@ -41,53 +41,58 @@ export const Home = () => {
   return (
     <div>
       {showHome && (
-        <div className={classes.container}>
-          <div className={classes['top-arrow']}>
-            <div
-              className={classes.link}
-              onClick={() => {
-                toggleShowHome();
-                toggleShowAngles();
-              }}
-            >
-              <div className={classes.top}>
-                <p>Is it a triangle?</p>
-              </div>
-            </div>
+        <div>
+          <div className={classes.title}>
+            <h1>Fun With Triangles</h1>
           </div>
+          <div className={classes.container}>
+            <div className={classes['top-arrow']}>
+              <div
+                className={classes.link}
+                onClick={() => {
+                  toggleShowHome();
+                  toggleShowAngles();
+                }}
+              >
+                <div className={classes.top}>
+                  <p>Is it a triangle?</p>
+                </div>
+              </div>
+            </div>
 
-          <div className={classes['bottom-arrows']}>
-            <div
-              className={classes.link}
-              onClick={() => {
-                toggleShowHome();
-                toggleShowArea();
-              }}
-            >
-              <div className={classes.left}>
-                <p>Find area of triangle.</p>
+            <div className={classes['bottom-arrows']}>
+              <div
+                className={classes.link}
+                onClick={() => {
+                  toggleShowHome();
+                  toggleShowArea();
+                }}
+              >
+                <div className={classes.left}>
+                  <p>Find area of triangle</p>
+                </div>
               </div>
-            </div>
-            <div
-              className={classes.link}
-              onClick={() => {
-                toggleShowHome();
-                toggleShowAngle();
-              }}
-            >
-              <div className={classes.center}>
-                <p>A quiz on triangles.</p>
+              <div
+                className={classes.link}
+                onClick={() => {
+                  toggleShowHome();
+                  toggleShowAngle();
+                }}
+              >
+                <div className={classes.center}>
+                  <p>A quiz on triangles</p>
+                </div>
               </div>
-            </div>
-            <div
-              className={classes.link}
-              onClick={() => {
-                toggleShowHome();
-                toggleShowHypotenuse();
-              }}
-            >
-              <div className={classes.right}>
-                <p>Find hypotenuse.</p>
+              <div
+                className={classes.link}
+                onClick={() => {
+                  toggleShowHome();
+                  toggleShowHypotenuse();
+                }}
+              >
+                <div className={classes.right}>
+                  <p>Find hypotenuse</p>
+                </div>
               </div>
             </div>
           </div>

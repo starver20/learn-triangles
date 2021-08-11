@@ -2,7 +2,7 @@
   --secondary-color: #ac3b61;
 }
 .icon {
-  position: absolute;
+  position: fixed;
   left: 2vw;
   top: 4vh;
   cursor: pointer;
